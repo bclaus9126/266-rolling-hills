@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>266 Rolling Hills - Honest Assessment</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f5f3ef;
+    color: #1f2a37;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 24px 20px 64px; }
+  .hero {
+    background: #1f2a37;
+    color: #fff;
+    padding: 36px 28px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+  }
+  .hero .eyebrow {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #c9b37d;
+    margin-bottom: 10px;
+  }
+  .hero h1 { font-size: 28px; font-weight: 600; margin-bottom: 8px; line-height: 1.25; }
+  .hero .sub { font-size: 15px; color: #c8d0db; }
+  .facts {
+    display: flex;
+    gap: 18px;
+    margin-top: 22px;
+    flex-wrap: wrap;
+  }
+  .fact {
+    flex: 1;
+    min-width: 140px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .fact .label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #9ba7b6; }
+  .fact .value { font-size: 18px; font-weight: 600; margin-top: 4px; }
+
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 3px rgba(31,42,55,0.06);
+  }
+  .intro p { margin-bottom: 12px; font-size: 16px; }
+  .intro .signoff { font-size: 14px; color: #5a6677; margin-top: 14px; line-height: 1.5; }
+
+  .diagnosis {
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(31,42,55,0.06);
+    overflow: hidden;
+  }
+  .diagnosis summary {
+    padding: 20px 24px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    color: #1f2a37;
+  }
+  .diagnosis summary::-webkit-details-marker { display: none; }
+  .diagnosis summary::after {
+    content: "+";
+    margin-left: auto;
+    font-size: 22px;
+    color: #9ba7b6;
+    font-weight: 300;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .diagnosis[open] summary::after { content: "-"; }
+  .diagnosis .body {
+    padding: 0 24px 22px 24px;
+    font-size: 15px;
+    color: #3a4657;
+  }
+  .num {
+    background: #c9b37d;
+    color: #1f2a37;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .cta {
+    background: #c9b37d;
+    color: #1f2a37;
+    padding: 32px 28px;
+    border-radius: 14px;
+    margin-top: 24px;
+    text-align: center;
+  }
+  .cta h2 { font-size: 22px; margin-bottom: 8px; }
+  .cta p { font-size: 15px; margin-bottom: 18px; }
+  .contact {
+    background: rgba(31,42,55,0.08);
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 15px;
+    line-height: 1.9;
+  }
+  .contact strong { display: block; font-size: 16px; margin-bottom: 4px; }
+
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    color: #7a8595;
+    margin-top: 28px;
+    padding: 0 10px;
+  }
+
+  @media (max-width: 480px) {
+    .wrap { padding: 16px 14px 48px; }
+    .hero { padding: 28px 22px; }
+    .hero h1 { font-size: 22px; }
+    .card, .diagnosis summary { padding-left: 20px; padding-right: 20px; }
+    .diagnosis .body { padding-left: 20px; padding-right: 20px; }
+    .fact { min-width: 100%; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="hero">
+      <div class="eyebrow">Honest Assessment</div>
+      <h1>266 Rolling Hills, New Braunfels</h1>
+      <div class="sub">Prepared for Luis Collazo by Brad Claus, JLA Realty</div>
+      <div class="facts">
+        <div class="fact">
+          <div class="label">Days on Market</div>
+          <div class="value">28</div>
+        </div>
+        <div class="fact">
+          <div class="label">Expired</div>
+          <div class="value">05/06/2026</div>
+        </div>
+        <div class="fact">
+          <div class="label">Last List Price</div>
+          <div class="value">$310,000</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card intro">
+      <p>Luis - 28 days is a short run, and an expired this fast usually
+      means the listing came off before the strategy got a chance to
+      land. That is actually good news. There is nothing wrong with the
+      home that a relist cannot fix.</p>
+      <p>I spent some time looking at the listing the way a buyer's agent
+      shopping the 78130 starter market would have looked at it. A few
+      things stood out, and they are all things that move on a relist.
+      Below is what I would change. No pitch, just an honest second
+      opinion.</p>
+      <div class="signoff">
+        Brad Claus<br>
+        JLA Realty
+      </div>
+    </div>
+
+    <details class="diagnosis" open>
+      <summary><span class="num">1</span>The asking price was sitting above where buyers were willing to engage</summary>
+      <div class="body">
+        $310,000 lands roughly 6 to 11 percent above the top of the
+        valuation range a buyer's agent would have pulled before
+        showing the home. In a builder-tract neighborhood where
+        several near-identical 3-bed floor plans are on the market at
+        any given time, buyers tend to filter on price first and
+        narrative second. That is the most common reason a clean,
+        recent-build home goes 28 days with no offer worth taking.
+        A relist priced inside the value range, with one strong
+        reason to choose this house over the next one on the block,
+        usually moves quickly.
+      </div>
+    </details>
+
+    <details class="diagnosis">
+      <summary><span class="num">2</span>There is a square footage discrepancy across the listing sites</summary>
+      <div class="body">
+        The MLS feed shows 1,651 square feet. Realtor.com, Movoto, and
+        a few other syndication sites show 1,459. That is a 13 percent
+        difference between sources, and buyers and their lenders see
+        it the moment they pull comps. It does not kill a deal on its
+        own, but it pushes offers down and creates lender-side friction
+        once an offer comes in. Resolving this in writing before a
+        relist - one authoritative number, sourced and disclosed -
+        removes the friction entirely.
+      </div>
+    </details>
+
+    <details class="diagnosis">
+      <summary><span class="num">3</span>You are competing directly with new-build inventory at the same price</summary>
+      <div class="body">
+        The home is a 2023 build, which is a real strength. The
+        challenge is that the builders along this corridor are still
+        moving fresh inventory in the same price band, often with
+        rate buy-downs and closing-cost incentives. To a price-
+        sensitive first-time buyer, "lightly used 2023" has to do
+        more work to win against "brand new with builder incentives."
+        A relist that leads with what the home has that the new
+        builds do not - a finished yard, blinds and curtain rods
+        already up, no construction next door for the next two
+        years - changes the math for that buyer.
+      </div>
+    </details>
+
+    <details class="diagnosis">
+      <summary><span class="num">4</span>28 days is short - this expired before it had a story</summary>
+      <div class="body">
+        Most listings in this segment do not even start to tell the
+        full marketing story until day 30 or 45. A short DOM expired
+        is almost always a signal that the listing agreement ran out
+        before the listing got the one repositioning that would have
+        moved it. The good news is, you have not absorbed any DOM
+        damage yet. A clean relist with a fresh MLS number, a tighter
+        price, and the sqft issue resolved tends to perform very
+        differently than the first run did.
+      </div>
+    </details>
+
+    <div class="cta">
+      <h2>Let's have an honest conversation</h2>
+      <p>If any of this resonates, I would be glad to sit down and walk
+      through what a relist would look like. No pressure, no pitch.</p>
+      <div class="contact">
+        <strong>Brad Claus</strong>
+        JLA Realty<br>
+        (210) 787-8556<br>
+        Brad@theclausteam.com
+      </div>
+    </div>
+
+    <div class="footer">
+      Prepared 05/06/2026 by Brad Claus, JLA Realty. This page is a private
+      second-opinion prepared for the owner of 266 Rolling Hills.
+    </div>
+
+  </div>
+</body>
+</html>
